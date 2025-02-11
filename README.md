@@ -103,7 +103,7 @@ package main
 
 import (
     "fmt"
-	"app"
+    "app"
     "github.com/gouef/hooks"
 )
 
@@ -112,7 +112,7 @@ func main() {
     subscriber := &app.Subscriber{Name: "Subscriber 1"}
 
     // Register a hook for the User::create event
-	hooks.AddHook("User::create", func(event interface{}) {
+    hooks.AddHook("User::create", func(event interface{}) {
         subscriber.OnUserCreated(event)
     })
 
@@ -134,7 +134,7 @@ import (
     "testing"
     "app"
     "github.com/stretchr/testify/mock"
-	"github.com/gouef/hooks"
+    "github.com/gouef/hooks"
 )
 
 // MockSubscriber is a mock for the subscriber
